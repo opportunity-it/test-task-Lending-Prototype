@@ -1,3 +1,282 @@
+// GENERAL STYLES
 body {
-    background-color: rgba(255, 0, 0, 0.5);
+    font-family: "Mulish", sans-serif;
+
+    background-color: #262626;
+    background-color: rgba(117, 99, 102, 0.5);
 }
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+// STYLES SECTION "MAIN"
+
+.main {
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+// header
+.header {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: block;
+    width: 64px;
+    height: 26px;
+}
+
+.icon-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.button-logo {
+    display: inline-flex;
+}
+
+.navigation-icon {
+    stroke: #ffffff;
+
+    transition: stroke 250ms linear;
+    .button-logo:hover &,
+    .button-logo:focus & {
+        stroke: #8b57c2;
+    }
+}
+
+// information
+.list-information {
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+}
+
+.text-information {
+    font-size: 14px;
+    line-height: 1.28;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #fff;
+}
+
+// h1
+.wrapper-h1 {
+    margin-bottom: 20px;
+    position: relative;
+
+    max-width: 284px;
+    min-height: 151px;
+}
+
+.before-title {
+    font-size: 96px;
+    line-height: 1.25;
+
+    color: #8b57c2;
+    text-transform: uppercase;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #fff;
+
+    text-transform: uppercase;
+}
+
+.after-title {
+    position: absolute;
+    top: 26px;
+    right: -32px;
+
+    max-width: 198px;
+
+    font-size: 14px;
+    line-height: 1.28;
+
+    color: #fff;
+
+    &.secondary {
+        position: static;
+        font-weight: 700;
+    }
+}
+
+// rating
+.rating {
+    margin-bottom: 40px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.rating-text {
+    max-width: 132px;
+
+    font-size: 14px;
+    line-height: 1.28;
+
+    color: #fff;
+
+    &.secondary {
+        font-weight: 700;
+    }
+}
+
+//
+.text-description {
+    margin-bottom: 40px;
+
+    max-width: 267px;
+
+    line-height: 1.25;
+
+    color: #fff;
+
+    &.secondary {
+        font-weight: 700;
+    }
+}
+
+.signup-courses {
+    padding: 12px 44px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.28;
+
+    display: block;
+
+    min-width: 227px;
+
+    color: #fff;
+    background-color: #8b57c2;
+    border-radius: 10px;
+}
+
+.remain-places {
+    margin-bottom: 42px;
+
+    font-size: 14px;
+    line-height: 1.28;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.main-images {
+    position: relative;
+
+    width: 318px;
+    height: 344px;
+    background-color: green;
+    background-image: url("../images/main/main-images-bg-opt.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.main-image {
+    position: absolute;
+    &:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+    &:nth-child(2) {
+        bottom: 0;
+        left: 0;
+    }
+    &:nth-child(3) {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+// spickers
+.spickers {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 32px 16px;
+
+    width: 88px;
+    height: 226px;
+
+    border-radius: 20px;
+    background-color: #8b57c2;
+}
+
+.spickers-text {
+    margin-bottom: 28px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.28;
+
+    color: #ffffff;
+    text-align: center;
+}
+
+.spickers-images {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// STYLES SECTION "FOR-WHAT"
